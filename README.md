@@ -20,10 +20,9 @@ Our mail service hires trains from the Train Operators and assigns parcels to th
 
 If we charge Parcel Owners too much, they will shift to another operator, so it is in our best interest to charge the owners as little as possible (turns out we're a government entity).
 
-## REST Interface
+## Console/Spec Interface
 
-For this exercise, you should design a small program which features a REST API that allows:
-
+Entrypoint can be anything, just tell us how to run your program. Assume these operators are console savvy!
 ### Train Operators
 
 - Tell the system
@@ -32,9 +31,10 @@ For this exercise, you should design a small program which features a REST API t
   - Lines they can operate on
   - Withdraw bids
 - Ask the system
-  - Which trains our system has booked
-    - Line that it is assigned to
-    - Time the train left
+  - Status of their train(s)
+    - Line that it is assigned to (if booked`+`left)
+    - Time the train left (if booked`+`left)
+    - Parcels & Parcel Info (if booked`+`left)
 
 ### Parcel Owners
 
@@ -47,13 +47,12 @@ For this exercise, you should design a small program which features a REST API t
 
 ### Post Master
 
-- Ask the system
-  - What parcels were loaded into which trains and what line the train went out on
+- Book`+`Fill`+`Send the train
 
 ## Constraints
 
-- Train Operator posts an offer for a train, which you can then book it unless it was previously withdrawn.
-- When you book a train, it is instantly loaded and leaves.
+- Train Operator posts an offer for a train, which Post Master can then book, fill and send, it unless it was previously withdrawn.
+- When you book a train, it is instantly filled and leaves.
 - Trains are a one-time thing when you book a train for a line, it is used and cannot be rebooked. Trains will be re-submitted by the Train Operator as new trains.
 - Booked trains take 3h to run. This makes the line unavailable during that time.
   - If you send a train on an occupied line, they will crash!
@@ -66,11 +65,7 @@ Your solver need not be complex, but must make an attempt to solve the optimisat
 
 You will note that there are some ambiguities in the above, and some points where you will have to make design decisions. You should clearly note which ones you spotted and what restrictions you placed on behaviour in order to make the problem tractable.
 
-Your REST API design need not be clever, or optimise load, but must be functionally correct.
-
-You need not worry about authenticating owners, Train Operators, or postmasters.
-
-This task can easily take way longer than 6 hours if you allow it so don't let that happen.
+This task can easily take way longer than 4 hours if you allow it so don't let that happen.
 
 ## Example
 
