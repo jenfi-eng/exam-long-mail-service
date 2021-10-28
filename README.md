@@ -20,9 +20,12 @@ Our mail service hires trains from the Train Operators and assigns parcels to th
 
 If we charge Parcel Owners too much, they will shift to another operator, so it is in our best interest to charge the owners as little as possible (turns out we're a government entity).
 
-## Console/Spec Interface
+## Interface, Data Models, Tests
 
-Entrypoint can be anything, just tell us how to run your program. Assume these operators are console savvy!
+- Entrypoint can be anything, just tell us how to run your program. Assume these operators are console savvy!
+- Needs to be DB backed, any DB of your choice.
+- Needs specs coverage, choice of any framework.
+
 ### Train Operators
 
 - Tell the system
