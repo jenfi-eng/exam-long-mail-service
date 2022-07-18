@@ -20,11 +20,9 @@ Our mail service hires trains from the Train Operators and assigns parcels to th
 
 If we charge Parcel Owners too much, they will shift to another operator, so it is in our best interest to charge the owners as little as possible (turns out we're a government entity).
 
-## Interface, Data Models, Tests
+## Interface, Data Models
 
 - Entrypoint can be anything, just tell us how to run your program. Assume these operators are console savvy!
-- Needs to be DB backed, any DB of your choice.
-- Needs specs coverage, choice of any framework.
 
 ### Train Operators
 
@@ -60,16 +58,6 @@ If we charge Parcel Owners too much, they will shift to another operator, so it 
 - Booked trains take 3h to run. This makes the line unavailable during that time.
   - If you send a train on an occupied line, they will crash!
 
-## Notes
-
-Finesse is not required, and neither is a frontend, though you should give enough documentation that we can verify your solution is correct.
-
-Your solver need not be complex, but must make an attempt to solve the optimisation problem and you should document how far you decided to go in doing so.
-
-You will note that there are some ambiguities in the above, and some points where you will have to make design decisions. You should clearly note which ones you spotted and what restrictions you placed on behaviour in order to make the problem tractable.
-
-This task can easily take way longer than 4 hours if you allow it so don't let that happen.
-
 ## Example
 
 An example configuration might be:
@@ -88,3 +76,15 @@ Packages:
 - 0001 - weight 1kg , volume 20 cm3
 - 0002 - weight 0.5kg, volume 5 cm3
 - ...
+
+## Important Notes
+
+Frontend is not required, though you should give enough documentation that we can verify your solution is correct.
+
+- **Your solver must make an attempt to solve the optimisation problem** and you should document how far you decided to go in doing so.
+- Needs to be DB backed, any DB of your choice.
+- Needs good specs coverage, choice of any framework.
+
+You will note that there are some ambiguities in the above, and some points where you will have to make design decisions. You should clearly note which ones you spotted and what restrictions you placed on behaviour in order to make the problem tractable.
+
+This task can easily take way longer than 4 hours if you allow it so don't let that happen.
