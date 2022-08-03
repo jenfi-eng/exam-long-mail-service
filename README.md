@@ -86,5 +86,3 @@ Frontend is not required, though you should give enough documentation that we ca
 - Needs good specs coverage, choice of any framework.
 
 You will note that there are some ambiguities in the above, and some points where you will have to make design decisions. You should clearly note which ones you spotted and what restrictions you placed on behaviour in order to make the problem tractable.
-
-This task can easily take way longer than 4 hours if you allow it so don't let that happen.
