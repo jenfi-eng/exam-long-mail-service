@@ -58,6 +58,9 @@ If we charge Parcel Owners too much, they will shift to another operator, so it 
 - Booked trains take 3h to run. This makes the line unavailable during that time.
   - If you send a train on an occupied line, they will crash!
 
+## Optimization:
+Develop an algorithm or a function that assigns parcels to trains in a way that minimizes the total cost of shipping. This can be framed as a classic optimization problem, such as the knapsack problem or the assignment problem.
+
 ## Example
 
 An example configuration might be:
@@ -82,7 +85,7 @@ Packages:
 Frontend is not required, though you should give enough documentation that we can verify your solution is correct.
 
 - **Your solver must make an attempt to solve the optimisation problem** and you should document how far you decided to go in doing so.
-- Needs to be DB backed, any DB of your choice.
-- Needs good specs coverage, choice of any framework.
+- **Needs to be DB backed**, any DB of your choice.
+- **Needs good specs coverage**, choice of any framework.
 
 You will note that there are some ambiguities in the above, and some points where you will have to make design decisions. You should clearly note which ones you spotted and what restrictions you placed on behaviour in order to make the problem tractable.
